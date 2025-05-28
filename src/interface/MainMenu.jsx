@@ -19,8 +19,7 @@ import { useState } from 'react';
 import useGame from '../stores/useGame.js';
 import LogoBall from '../assets/logo_ball_stroke.svg';
 import Wordmark from '../assets/wordmark.svg';
-import MichaelLogo from '../assets/mm_white.svg';
-import { getLocalStorage, setLocalStorage } from '../stores/utils.js';
+import { setLocalStorage } from '../stores/utils.js';
 
 export default function MainMenu() {
   const {
@@ -317,24 +316,32 @@ export default function MainMenu() {
 
       <div className="main-menu-about-section">
         <div className="main-menu-about">
-          <a href="https://github.com/michaelkolesidis/beachy-beachy-ball">
-            © 2023 Michael Kolesidis.
+          <a
+            href="https://michaelkolesidis.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            © Michael Kolesidis
           </a>
         </div>
         <div className="main-menu-about">
-          {' '}
-          <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">
-            Licensed under the GNU AGPL 3.0
+          <a
+            href="https://www.gnu.org/licenses/agpl-3.0.en.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Licensed under AGPL 3.0
+          </a>{' '}
+          •{' '}
+          <a
+            href="https://github.com/michaelkolesidis/beachy-beachy-ball"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </a>
         </div>
       </div>
-      <a href="https://michaelkolesidis.com" target="_blank">
-        <img
-          className="author-logo"
-          src={MichaelLogo}
-          alt="Author's logo"
-        ></img>
-      </a>
     </div>
   );
 }

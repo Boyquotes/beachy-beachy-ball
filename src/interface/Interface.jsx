@@ -15,7 +15,7 @@
  *  https://www.gnu.org/licenses/agpl-3.0.html
  */
 
-import { useKeyboardControls } from '@react-three/drei';
+// import { useKeyboardControls } from '@react-three/drei';
 import { useEffect, useRef, useState } from 'react';
 import { addEffect } from '@react-three/fiber';
 import useGame from '../stores/useGame.js';
@@ -255,13 +255,11 @@ export default function Interface() {
             </div>
             <div className="modal-about-area">
               <div className="modal-about">
-                <a href="https://github.com/michaelkolesidis/beachy-beachy-ball">
-                  © 2023 Michael Kolesidis.
-                </a>
+                <a href="https://michaelkolesidis.com">© Michael Kolesidis</a>
               </div>
               <div className="modal-about">
                 <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">
-                  Licensed under the GNU AGPL 3.0
+                  Licensed under AGPL 3.0
                 </a>
               </div>
             </div>

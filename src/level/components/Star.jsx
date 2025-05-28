@@ -15,7 +15,7 @@
  *  https://www.gnu.org/licenses/agpl-3.0.html
  */
 
-import React, { useRef } from 'react';
+// import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 
 export default function Star(props) {
